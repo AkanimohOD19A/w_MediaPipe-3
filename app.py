@@ -11,6 +11,7 @@ mp_holistic = mp.solutions.holistic
 mp_pose = mp.solutions.pose
 
 DEMO_IMAGE = './content/sample.jpg'
+SHOWCASE_IMAGE = './content/showcase.jpg'
 
 st.title("Face Mesh with MediaPipe")
 
@@ -85,6 +86,8 @@ if app_mode == 'About App':
         unsafe_allow_html=True,
     )
 
+    st.image(SHOWCASE_IMAGE)
+
 elif app_mode == 'Run on Image':
 
     img_file_buffer = st.sidebar.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
@@ -99,8 +102,6 @@ elif app_mode == 'Run on Image':
             model_complexity=2,
             min_detection_confidence=0.5
     ) as pose:
-        # image = cv2.imread(image)
-        # image_height, image_width, _ = image.shape
         ## Convert BGR -> RGB
         results = pose.process(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
 
