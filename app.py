@@ -13,7 +13,7 @@ mp_pose = mp.solutions.pose
 DEMO_IMAGE = './content/sample.jpg'
 SHOWCASE_IMAGE = './content/showcase.jpg'
 
-st.title("Face Mesh with MediaPipe")
+st.title("Pose Estimation with MediaPipe")
 
 st.markdown(
     """
@@ -30,7 +30,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.sidebar.title('Facemesh Sidebar')
+st.sidebar.title('Pose Estimation Sidebar')
 st.sidebar.subheader('Parameters')
 
 
