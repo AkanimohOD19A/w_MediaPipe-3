@@ -89,6 +89,7 @@ if app_mode == 'About App':
     st.image(SHOWCASE_IMAGE)
 
 elif app_mode == 'Run on Image':
+    st.write("Please enter coloured images (for now)")
 
     img_file_buffer = st.sidebar.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
     if img_file_buffer is not None:
