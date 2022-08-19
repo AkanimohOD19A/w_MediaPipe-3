@@ -9,7 +9,7 @@ mp_drawing = mp.solutions.drawing_utils
 mp_holistic = mp.solutions.holistic
 mp_pose = mp.solutions.pose
 
-input_img = 'content/sample.jpg'
+input_img = './content/sample.jpg'
 
 ## RUN
 ### STATIC Images
