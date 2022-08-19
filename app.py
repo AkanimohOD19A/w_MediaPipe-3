@@ -64,7 +64,7 @@ app_mode = st.sidebar.selectbox('Choose the App Mode',
                                 )
 
 if app_mode == 'About App':
-    st.markdown("An application of Machine Learning to determine the Human Face in a served image, "
+    st.markdown("An application of Machine Learning to estimate pose in a served image, "
                 "modeled on the MediaPipe infrastructure, method is fast and computational cheap. "
                 "\n\n"
                 "To use the app, follow the sidebar and enter an image of choice and play around."
